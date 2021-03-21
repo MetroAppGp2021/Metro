@@ -1,8 +1,10 @@
-package com.example.metrocard2020;
+package com.example.metrocard2020.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.metrocard2020.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,11 +13,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // hi ya menna 3amla eh
-        //elhamdella ya hafsaa
-        //hi
-        //ooooooooooooooooooooooooooooooooooooo
-        //llllllll
-        //nnnnnn
     }
 }
