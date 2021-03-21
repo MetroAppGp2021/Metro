@@ -13,6 +13,5 @@ public class MainActivity extends AppCompatActivity {
 
         // hi ya menna 3amla eh
         //elhamdella ya hafsaa
-        //hi
     }
 }
