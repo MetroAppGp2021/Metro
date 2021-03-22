@@ -1,13 +1,22 @@
 package com.example.metrocard2020.main;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.metrocard2020.R;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -20,8 +29,19 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    Toolbar toolbar;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    ActionBarDrawerToggle toggle;
+    View header;
+
+    TextView userNameTextView;
+
     com.google.android.gms.maps.SupportMapFragment SupportMapFragment;
     FusedLocationProviderClient client;
 
@@ -29,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //-------------------------------------------------------------------------------
+        toolbar = findViewById(R.id.toolbar);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_bar);
+        header = navigationView.getHeaderView(0);
+        userNameTextView =(header).findViewById(R.id.user_name_text_view_nav);
+        navigationBar();
+
+        //-------------------------------------------------------------------------------
         SupportMapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.google_map);
 
@@ -40,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    //----------------------------------------------------------------------------------
     private void getCurrentLocation() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -83,4 +112,54 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-    }}
+    }
+
+    //-----------------------------------------------------------------------------------
+    public void navigationBar()
+    {
+        setSupportActionBar(toolbar);
+        toggle = new ActionBarDrawerToggle(this,
+                drawerLayout,
+                toolbar,
+                R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId())
+                {
+                    case R.id.setting_item:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.wallet_item:
+                        //startActivity(new Intent(HomePageActivity.this, TimeActivity.class));
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.help_item:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.about_item:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                    case R.id.logout_item:
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                }
+                return true;
+            }
+        });
+    }
+    @Override
+    public void onBackPressed() {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+        {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else{
+            super.onBackPressed();
+        }
+    }
+}
