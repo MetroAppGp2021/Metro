@@ -65,7 +65,7 @@
                     android:layout_marginBottom="5dp"
                     android:layout_weight="0.2"/>
             <Button
-                android:id="@+id/button"
+                android:id="@+id/where_to_button"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
@@ -93,7 +93,7 @@
                     android:background="@drawable/wallet_white"
                     android:layout_weight="0.2"/>
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/add_money_button"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"

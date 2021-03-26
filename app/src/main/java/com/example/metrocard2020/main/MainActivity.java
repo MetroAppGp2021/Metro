@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     View header;
 
     TextView userNameTextView;
+    Button WhereTo,AddMoney;
 
     com.google.android.gms.maps.SupportMapFragment SupportMapFragment;
     FusedLocationProviderClient client;
@@ -58,6 +59,16 @@ public class MainActivity extends AppCompatActivity {
         navigationBar();
 
         //-------------------------------------------------------------------------------
+        WhereTo = findViewById(R.id.where_to_button);
+        
+        WhereTo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,NewTraditionalActivity.class));
+            }
+        });
+        //-------------------------------------------------------------------------------
+        
         SupportMapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.google_map);
 

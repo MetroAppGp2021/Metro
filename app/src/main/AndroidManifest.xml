@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.metrocard2020">
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -11,11 +13,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MetroCard2020">
+        <activity android:name=".main.NewTraditionalActivity"></activity>
+        <activity android:name=".features.HistoryActivity" />
+        <activity android:name=".payment.WalletActivity" />
+        <activity android:name=".scanning.ScanActivity" />
+        <activity android:name=".features.AboutActivity" />
+        <activity android:name=".features.HelpActivity" />
+        <activity android:name=".features.SettingActivity" />
+        <activity android:name=".features.UserAccountActivity" />
+        <activity android:name=".payment.FawryActivity" />
+        <activity android:name=".payment.TicketReservationActivity" />
+        <activity android:name=".main.StationsMapAcivity" />
+        <activity android:name=".login.RegistrationActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDFPgWXOVtMUIYeYLWqXTVMhAMMQMQvfqQ"/>
-        <activity android:name=".main.MainActivity"/>
-            <activity android:name=".splash.SplashActivity">
+            android:value="AIzaSyDFPgWXOVtMUIYeYLWqXTVMhAMMQMQvfqQ" />
+
+        <activity android:name=".main.MainActivity" />
+        <activity android:name=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
