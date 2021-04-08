@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.metrocard2020.R;
+import com.example.metrocard2020.payment.FawryActivity;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -50,10 +51,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //-------------------------------------------------------------------------------
         toolbar = findViewById(R.id.toolbar);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_bar);
+        AddMoney = findViewById(R.id.add_money_button);
         header = navigationView.getHeaderView(0);
         userNameTextView =(header).findViewById(R.id.user_name_text_view_nav);
         navigationBar();
@@ -65,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,NewTraditionalActivity.class));
+            }
+        });
+
+        AddMoney.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FawryActivity.class));
             }
         });
         //-------------------------------------------------------------------------------

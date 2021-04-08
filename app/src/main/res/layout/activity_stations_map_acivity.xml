@@ -7,6 +7,48 @@
     android:background="@drawable/mapp"
     tools:context=".main.StationsMapAcivity">
 
+    <ImageView
+        android:id="@+id/back_image_view"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:background="#504444"
+        android:padding="15dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:background="#504444"
+        android:text="Schedule Your Trip"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+
+    <TextView
+        android:id="@+id/confirm_trip_text_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_button"
+        android:gravity="center"
+        android:text="Confirm"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RadioButton
         android:id="@+id/radioButton6"

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.metrocard2020.R;
+import com.example.metrocard2020.login.LoginAndRegistrationActivity;
 import com.example.metrocard2020.main.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
@@ -18,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent HomeIntent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent HomeIntent = new Intent(SplashActivity.this, LoginAndRegistrationActivity.class);
                 startActivity(HomeIntent);
                 finish();
             }

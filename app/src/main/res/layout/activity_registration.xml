@@ -1,10 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
-    tools:context=".login.RegistrationActivity">
+    android:background="@drawable/metro"
+    android:padding="16dp"
+    tools:context=".login.RegistrationActivity"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/user_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="2dp"
+        android:textColorHint="@android:color/black"
+        android:elevation="8dp"
+        android:hint="  User name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:background="@drawable/mybutton"
+        android:maxLength="20"
+        />
+    <EditText
+        android:id="@+id/phone_number_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="2dp"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:textColorHint="@android:color/black"
+        android:hint="  Phone Number"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:background="@drawable/mybutton"
+        android:inputType="number"
+        android:maxLength="11"
+        />
+    <EditText
+        android:id="@+id/national_id_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="2dp"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:textColorHint="@android:color/black"
+        android:hint="  National ID"
+        android:drawableLeft="@drawable/person"
+        android:background="@drawable/mybutton"
+        android:inputType="number"
+        android:maxLength="14"
+        />
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="2dp"
+        android:elevation="8dp"
+        android:hint="  Password"
+        android:textColorHint="@android:color/black"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:background="@drawable/mybutton"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/register_button"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/mybutton"
+            android:text="Create Account"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="18dp"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:text="Alrady has account? Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/login_text_view"
+        />
+    <TextView
+        android:text="create account using social media?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/facebook_to_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/fb" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/twitter"
+            android:id="@+id/twitter_to_login"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/google"
+            android:id="@+id/google_to_login"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

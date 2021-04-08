@@ -7,4 +7,140 @@
     android:background="@drawable/back"
     tools:context=".payment.FawryActivity">
 
+    <ImageView
+        android:id="@+id/back_image_view"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:background="#504444"
+        android:padding="15dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:background="#504444"
+        android:gravity="center_vertical"
+        android:text="Fawry"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+    <TextView
+        android:id="@+id/phone_number_edit_text"
+        style="bold"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dark_button"
+        android:elevation="8dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:maxLength="11"
+        android:minEms="11"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <TextView
+        android:id="@+id/password_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dark_button"
+        android:elevation="8dp"
+        android:hint="Email"
+        android:maxLength="15"
+        android:padding="10dp"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <TextView
+        android:id="@+id/ticket_price_text_view"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mybutton"
+        android:elevation="8dp"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <TextView
+        android:id="@+id/ticket_price_text_view2"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mybutton"
+        android:elevation="8dp"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RadioButton
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/white"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            />
+
+        <RadioButton
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/white"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
