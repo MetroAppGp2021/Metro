@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metro"
+    tools:context=".main.Line2">
+
+    <RadioGroup
+        android:id="@+id/radio_groupLine2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_button_shobra"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.95"
+            android:scaleY="1"
+            android:text="Shobra"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_koleyet_el_zeraa"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Koleyet el-Zeraa"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_mezallat"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Mezallat"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_khalafawy"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Khalafawy"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_sainte_teresa"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Sainte Teresa"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_road_el_farag"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Road el-farag"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_massara"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Massara"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_al_shohadaa"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Al-Shohadaa"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_ataba"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Attaba"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_mohamed_naguib"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Mohamed Naguib"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_sadat"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Sadat"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_opera"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Opera"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_dokki"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Dokki"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_bohooth"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Bohooth"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_cairo_university"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Cairo University"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_faisal"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Faisal"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_giza"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Giza"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_giza_suburbs"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Giza Suburbs"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_sakiat_mekki"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:text="Sakiat Mekki"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_el_mounib"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:buttonTint="#B53737"
+            android:scaleX="0.95"
+            android:scaleY="1"
+            android:text="El Mounib"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/confirm_line2_text_view"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/circle_button"
+        android:gravity="center"
+        android:text="Done"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

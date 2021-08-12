@@ -21,47 +21,46 @@
 
     <EditText
         android:id="@+id/phone_number_edit_text"
+        style="bold"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_gravity="center"
-        android:hint="  Phone Number"
-        android:textColor="#000"
-        android:textColorHint="#000"
-        android:drawableLeft="@drawable/ic_baseline_phone_24"
-        android:background="@drawable/mybutton"
         android:layout_marginLeft="2dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="2dp"
+        android:background="@drawable/mybutton"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
         android:elevation="8dp"
-        android:padding="10dp"
-        style="bold"
+        android:hint="  Phone Number"
         android:inputType="number"
         android:maxLength="11"
         android:minEms="11"
-        />
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000" />
 
     <EditText
         android:id="@+id/password_edit_text"
         android:layout_width="300dp"
         android:layout_height="45dp"
+        android:layout_gravity="center"
         android:layout_marginLeft="2dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="2dp"
-        android:layout_gravity="center"
+        android:background="@drawable/mybutton"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:elevation="8dp"
         android:hint="  Password"
-        android:textColorHint="#000"
-        android:textColor="#000"
-        android:padding="10dp"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
-        android:background="@drawable/mybutton"
-        android:maxLength="15"
         android:inputType="textPassword"
-        />
+        android:maxLength="15"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="46dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         android:layout_gravity="center">
 
@@ -71,67 +70,39 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:background="@drawable/mybutton"
+            android:gravity="center"
             android:text="Login"
             android:textColor="#000"
-            android:gravity="center"
             android:textSize="18dp"
 
             />
     </LinearLayout>
+
     <TextView
-        android:text="Don't have account? Create one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="16sp"
-        android:layout_marginTop="5dp"
-        android:textColor="@android:color/holo_blue_bright"
-        android:layout_marginBottom="16dp"
         android:id="@+id/create_account_text_view"
-        />
-
-    <TextView
-        android:text="login with ?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp"
-        />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="16dp"
+        android:text="You Don't Have An Account. Create Account"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="18sp" />
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Wave"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
         android:layout_gravity="center"
-        android:layout_margin="10dp">
-
-        <ImageView
-            android:id="@+id/facebook_to_login"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:background="@drawable/fb" />
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:background="@drawable/twitter"
-            android:id="@+id/twitter_to_login"
-            />
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:background="@drawable/google"
-            android:id="@+id/google_to_login"
-            />
-
-    </LinearLayout>
+        app:SpinKit_Color="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
 
 </LinearLayout>

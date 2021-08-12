@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@drawable/green_button"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:padding="2dp"
+            android:id="@+id/from_text_view"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:padding="2dp"
+            android:id="@+id/to_text_view"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="10dp"
+            android:padding="2dp"
+            android:id="@+id/date_text_view"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:padding="2dp"
+            android:textSize="10dp"
+            android:id="@+id/time_text_view"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            android:padding="2dp"
+            android:id="@+id/cost_text_view"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

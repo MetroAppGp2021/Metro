@@ -4,56 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".payment.PaymentActivity"
     android:background="@drawable/metro"
-    >
+    tools:context=".features.TicketActivity">
+
     <ImageView
         android:id="@+id/back_image_view"
         android:layout_width="50dp"
         android:layout_height="55dp"
-        android:background="#504444"
         android:padding="15dp"
         android:src="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
-        android:layout_width="275dp"
-        android:layout_height="55dp"
-        android:background="#504444"
-        android:gravity="center_vertical"
-        android:text="Payment"
-        android:textColor="@android:color/white"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.964"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"></TextView>
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/round_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.324" />
-
-    <TextView
-        android:id="@+id/get_qr_code_text_view"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/btn_background"
+        android:id="@+id/text_view"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
         android:gravity="center"
-        android:text="Get QR code"
+        android:text="Only show Tickets over 24 Hours. it's back to ticket expiration"
         android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.746" />
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notepad_recycleview"
+        android:layout_width="310dp"
+        android:layout_height="500dp"
+        android:layout_weight="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/view_tickets_text_view"
+        style="bold"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/white_button"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:hint="View Tickets"
+        android:inputType="number"
+        android:maxLength="11"
+        android:minEms="11"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

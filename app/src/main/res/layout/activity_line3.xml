@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metro"
+    tools:context=".main.Line3">
+
+    <RadioGroup
+        android:id="@+id/radio_groupLine3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_button_cairo_airport"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.95"
+            android:scaleY="1"
+            android:text="Cairo-Airport"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_adly_mansour"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Adly-Mansour"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_hiksatab"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Hiksatab"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_omr_ebn_elkhatab"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Omar ebn-EL-Khatab"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_qebaa"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Qebaa"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_hisham_barakat"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Hisham-Barakat"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_el_nozha"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="EL-Nozha"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_nadi_elshams"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Nadi EL-Shams"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_alf_maskan"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Alf-Maskan"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_heleioblies"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Heleioblies"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_haroun"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Haraoun"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_el_aharam"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="EL-Aharam"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_kolit_el_banat"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Kolit EL-Banat"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_cairo_stadieum"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Cairo-Stadieum"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_el_maaraad"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="EL-Maaraad"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_abassia"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Abbasia"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_abdo_basha"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Abdo-Basha"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_el_geish"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="EL-Geish"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_bab_el_shaariaa"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Bab EL-Shaaria"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_attaba"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:buttonTint="#8BC34A"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:text="Attaba"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/radio_button_nasser"
+        android:layout_width="200dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="#8BC34A"
+        android:scaleX="0.65"
+        android:scaleY="0.65"
+        android:text="Nasser"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_groupLine3" />
+
+    <TextView
+            android:id="@+id/radio_button_masbiro"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_nasser"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="Masbero" />
+        <TextView
+            android:id="@+id/radio_button_zmalek"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_masbiro"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="Zmalek" />
+        <TextView
+            android:id="@+id/radio_button_kit_kat"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_zmalek"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="Kit-Kat" />
+        <TextView
+            android:id="@+id/radio_button_el_sodan"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_kit_kat"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="EL-Sodan" />
+        <TextView
+
+            android:id="@+id/radio_button_embaba"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_el_sodan"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="Embaba" />
+        <TextView
+            android:id="@+id/radio_button_el_monira"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_embaba"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="EL-Monira" />
+        <TextView
+            android:id="@+id/radio_button_el_daaery"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_el_monira"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="EL_Daaery" />
+        <TextView
+            android:id="@+id/radio_button_rod_el_farag"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_el_daaery"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="Rod EL_Farag" />
+        <TextView
+            android:id="@+id/radio_button_el_tofikia"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_rod_el_farag"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="EL-Tofikia" />
+        <TextView
+            android:id="@+id/radio_button_wadii_el_nile"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_el_tofikia"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="Wadii EL_Nile" />
+        <TextView
+            android:id="@+id/radio_button_mostafa_mahmoud"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_wadii_el_nile"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="Mostafa-Mahmoud" />
+        <TextView
+            android:id="@+id/radio_button_shehab"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textSize="16dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_mostafa_mahmoud"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textColor="@android:color/white"
+            android:text="Shehab" />
+        <TextView
+            android:id="@+id/radio_button_cairo_university"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:scaleX="0.95"
+            android:scaleY="1"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:textSize="18dp"
+            android:buttonTint="#8BC34A"
+            app:layout_constraintTop_toBottomOf="@id/radio_button_shehab"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:text="Cairo-University" />
+
+    <TextView
+        android:id="@+id/confirm_line3_text_view"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/circle_button"
+        android:gravity="center"
+        android:text="Done"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
